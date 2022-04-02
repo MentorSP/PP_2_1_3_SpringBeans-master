@@ -14,13 +14,12 @@ public class AnimalsCage {
     private Animal animal;
 
     @Autowired
-    private Timer time = new Timer();
+    private Timer time;
 
-    @Bean
     public Timer getTimer() {
         return time;
     }
-    
+
     public void whatAnimalSay() {
         System.out.println("Say:");
         System.out.println(animal.toString());
